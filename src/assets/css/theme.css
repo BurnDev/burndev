@@ -43,6 +43,12 @@
 	.inner {
 		text-align: left;
 	}
+
+	.long-logo {
+		background: url('../../images/burnDev_long.png') -50px no-repeat;
+		background-size: 500px;
+		height: 100px;
+	}
 /* horrible hacks end here...for now */
 
 /* Reset */

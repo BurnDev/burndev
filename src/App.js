@@ -43,7 +43,7 @@ class App extends Component {
                     <section id="banner">
                         <div className="inner">
                             <div className="logo"><span className="icon fa-diamond"></span></div>
-                            <h2>This is BurnDev</h2>
+                            <div className="long-logo"></div>
                             <p>Where web and software development collide</p>
                         </div>
                     </section>
