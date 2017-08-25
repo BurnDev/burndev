@@ -42,22 +42,22 @@ class App extends Component {
 
                     <section id="banner">
                         <div className="inner">
-                            <div className="logo"><span className="icon fa-diamond"></span></div>
+                            {/* <div className="logo"><span className="icon fa-diamond"></span></div> */}
                             <div className="long-logo"></div>
-                            <p>Where web and software development collide</p>
+                            <p>Providing modern productivity applications</p>
                         </div>
                     </section>
 
                     <section id="wrapper">
                         <section id="one" className="wrapper spotlight style1">
                             <div className="inner">
-                                <a href="#" className="image">
+                                <div className="image">
                                     <div className="image-bg one"></div>
-                                </a>
+                                </div>
                                 <div className="content">
-                                    <h2 className="major">Magna arcu feugiat</h2>
+                                    <h2 className="major">What We Do</h2>
                                     <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                                    <a href="#" className="special">Learn more</a>
+                                    <a href="#footer" className="special">Learn more</a>
                                 </div>
                             </div>
                         </section>
@@ -66,14 +66,14 @@ class App extends Component {
                             <div className="inner">
                                 <a href="#" className="image"><div className="image-bg two"></div></a>
                                 <div className="content">
-                                    <h2 className="major">Tempus adipiscing</h2>
+                                    <h2 className="major">Need Something Specific</h2>
                                     <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
                                     <a href="#" className="special">Learn more</a>
                                 </div>
                             </div>
                         </section>
 
-                        <section id="three" className="wrapper spotlight style3">
+                        {/* <section id="three" className="wrapper spotlight style3">
                             <div className="inner">
                                 <a href="#" className="image"><div className="image-bg three"></div></a>
                                 <div className="content">
@@ -82,20 +82,25 @@ class App extends Component {
                                     <a href="#" className="special">Learn more</a>
                                 </div>
                             </div>
-                        </section>
+                        </section> */}
 
                         <section id="four" className="wrapper alt style1">
                             <div className="inner">
-                                <h2 className="major">Vitae phasellus</h2>
-                                <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                                <h2 className="major">Our Projects</h2>
+                                <p>As a company we are dedicated to building modern applications designed to improve productivity. Our goal is to help you get through the jobs you have to do so you are free to do the jobs you want to do.  Our applications are actively maintained and we are always interested in user feedback so we can provide the best user experience possible</p>
                                 <section className="features">
                                     <article>
-                                        <a href="#" className="image"><div className="image-bg four portfolio"></div></a>
-                                        <h3 className="major">Sed feugiat lorem</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                        <a href="#" className="special">Learn more</a>
+                                        <div className="image">
+                                            <div className="image-bg formula-editor portfolio">
+                                                <div className="image-overlay winner"></div>
+                                            </div>
+                                        </div>
+                                        <h3 className="major">Formula Editor - Complex Formulas Simplified</h3>
+                                        <p>This is Microsofts 2017 Hack Productivity best Office add-in winner.  The Formula Editor integrates a fully-fledged code editor into Microsoft Excel helping the user easily format and unwind complex formulas.</p>
+                                        <a href="#" className="special">View the project page</a>
+                                        <a href="https://store.office.com/en-us/app.aspx?assetid=WA104381147&sourcecorrid=a4c534a9-d075-478b-8025-f5b14398e01d&searchapppos=0&ui=en-US&rs=en-US&ad=US&appredirect=false" target="_blank" className="special">Buy it!</a>
                                     </article>
-                                    <article>
+                                    {/* <article>
                                         <a href="#" className="image"><div className="image-bg five portfolio"></div></a>
                                         <h3 className="major">Nisl placerat</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
@@ -112,11 +117,11 @@ class App extends Component {
                                         <h3 className="major">Fusce consequat</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                                         <a href="#" className="special">Learn more</a>
-                                    </article>
+                                    </article> */}
                                 </section>
-                                <ul className="actions">
+                                {/* <ul className="actions">
                                     <li><a href="#" className="button">Browse All</a></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </section>
 
@@ -149,8 +154,8 @@ class App extends Component {
                                     1234 Somewhere Road Suite #2894<br />
                                     Nashville, TN 00000-0000
 								</li>
-                                <li className="fa-phone">(000) 000-0000</li>
-                                <li className="fa-envelope"><a href="#">info@burndev.co</a></li>
+                                {/* <li className="fa-phone">(000) 000-0000</li> */}
+                                <li className="fa-envelope"><a href="#">dev@burndev.co</a></li>
                                 <li className="fa-github"><a href="#">github.com/burndevllc</a></li>
                             </ul>
                             <ul className="copyright">

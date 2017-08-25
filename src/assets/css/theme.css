@@ -12,9 +12,12 @@
 	.image-bg {
 		display: inline-block;
 		background: url('../../images/pic01.jpg');
-		border-radius: 100%;
+		/* border-radius: 100%; */
 		width: 260px;
 		height: 260px;
+	}
+	.image-bg.square {
+		border-radius: 0;
 	}
 	.image-bg.two {
 		background: url('../../images/pic02.jpg');
@@ -24,6 +27,9 @@
 	}
 	.image-bg.four {
 		background: url('../../images/pic04.jpg');
+	}
+	.image-bg.formula-editor {
+		background: url('../../images/app_icon_300.png');
 	}
 	.image-bg.five {
 		background: url('../../images/pic05.jpg');
@@ -38,6 +44,16 @@
 	.image-bg.portfolio {
 		width: 450;
 		height: 260;
+	}
+
+	.image-overlay {
+		width: 79px;
+		height: 79px;
+		display: inline-block;
+	}
+
+	.image-overlay.winner {
+		background: url('../../images/winner-ribbon.png');
 	}
 
 	.inner {
@@ -3431,7 +3447,7 @@
 			}
 
 			.wrapper.spotlight .image {
-				border-radius: 100%;
+				/* border-radius: 100%; */
 				margin: 0 3em 2em 0;
 				width: 22em;
 				overflow: hidden;
