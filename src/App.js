@@ -130,7 +130,7 @@ class App extends Component {
                     <section id="footer">
                         <div className="inner">
                             <h2 className="major">Get in touch</h2>
-                            <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                            <p>Questions, comments, concerns or feedback? We'd love to hear from you!</p>
                             <form method="post" action="#">
                                 <div className="field">
                                     <label for="name">Name</label>
@@ -151,15 +151,15 @@ class App extends Component {
                             <ul className="contact">
                                 <li className="fa-home">
                                     BurnDev, LLC<br />
-                                    1234 Somewhere Road Suite #2894<br />
-                                    Nashville, TN 00000-0000
+                                    4 14th Street #127<br />
+                                    Hoboken, NJ 07030
 								</li>
                                 {/* <li className="fa-phone">(000) 000-0000</li> */}
                                 <li className="fa-envelope"><a href="#">dev@burndev.co</a></li>
                                 <li className="fa-github"><a href="#">github.com/burndevllc</a></li>
                             </ul>
                             <ul className="copyright">
-                                <li>&copy; BurnDev LLC All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                <li>&copy; Burn Dev, LLC. All rights reserved.</li>
                             </ul>
                         </div>
                     </section>
