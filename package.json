@@ -26,5 +26,5 @@
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.9.0"
   },
-  "homepage": "http://www.burndev.co/client/index.html"
+  "homepage": "http://www.burndev.co/client/public/index.html"
 }
