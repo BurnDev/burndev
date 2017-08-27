@@ -11,11 +11,10 @@ app.use(bodyParser.json())
 app.set('port', (process.env.PORT || 3001));
 
 // Express only serves static assets in production
-// if (process.env.NODE_ENV === 'production') {
-//   // todo: fix build
-//  // app.use(express.static('client/build'));
-//  app.use(express.static('client/public'));
-// }
+if (process.env.NODE_ENV === 'production') {
+  // todo: fix build
+  app.use(express.static('client/build'));
+}
 
 //setup sendgrid options
 var helper = require('sendgrid').mail;
