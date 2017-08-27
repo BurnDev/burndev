@@ -17,8 +17,6 @@ app.set('port', (process.env.PORT || 3001));
 //  app.use(express.static('client/public'));
 // }
 
-app.use(express.static('client/public'));
-
 //setup sendgrid options
 var helper = require('sendgrid').mail;
 var toEmail = new helper.Email('draisy@gmail.com');
