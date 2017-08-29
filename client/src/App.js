@@ -58,11 +58,11 @@ class App extends Component {
                         <div className="inner">
                             <h2>Menu</h2>
                             <ul className="links">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="generic.html">Generic</a></li>
-                                <li><a href="elements.html">Elements</a></li>
-                                <li><a href="#">Log In</a></li>
-                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="">Home</a></li>
+                                <li><a href="#one">What We Do</a></li>
+                                <li><a href="#two">Need Something Specific</a></li>
+                                <li><a href="#projects">Our Projects</a></li>
+                                <li><a href="#footer">Contact Us</a></li>
                             </ul>
                             <a href="#" className="close">Close</a>
                         </div>
@@ -85,7 +85,7 @@ class App extends Component {
                                 <div className="content">
                                     <h2 className="major">What We Do</h2>
                                     <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                                    <a href="#footer" className="special">Learn more</a>
+                                    {/* <a href="#footer" className="special">Learn more</a> */}
                                 </div>
                             </div>
                         </section>
@@ -96,23 +96,12 @@ class App extends Component {
                                 <div className="content">
                                     <h2 className="major">Need Something Specific</h2>
                                     <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                                    <a href="#" className="special">Learn more</a>
+                                    {/* <a href="#" className="special">Learn more</a> */}
                                 </div>
                             </div>
                         </section>
 
-                        {/* <section id="three" className="wrapper spotlight style3">
-                            <div className="inner">
-                                <a href="#" className="image"><div className="image-bg three"></div></a>
-                                <div className="content">
-                                    <h2 className="major">Nullam dignissim</h2>
-                                    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                                    <a href="#" className="special">Learn more</a>
-                                </div>
-                            </div>
-                        </section> */}
-
-                        <section id="four" className="wrapper alt style1">
+                        <section id="projects" className="wrapper alt style1">
                             <div className="inner">
                                 <h2 className="major">Our Projects</h2>
                                 <p>As a company we are dedicated to building modern applications designed to improve productivity. Our goal is to help you get through the jobs you have to do so you are free to do the jobs you want to do.  Our applications are actively maintained and we are always interested in user feedback so we can provide the best user experience possible</p>
@@ -125,27 +114,9 @@ class App extends Component {
                                         </div>
                                         <h3 className="major">Formula Editor - Complex Formulas Simplified</h3>
                                         <p>This is Microsofts 2017 Hack Productivity best Office add-in winner.  The Formula Editor integrates a fully-fledged code editor into Microsoft Excel helping the user easily format and unwind complex formulas.</p>
-                                        <a href="#" className="special">View the project page</a>
+                                        <a className="special">View the project page - Coming Soon!</a>
                                         <a href="https://store.office.com/en-us/app.aspx?assetid=WA104381147&sourcecorrid=a4c534a9-d075-478b-8025-f5b14398e01d&searchapppos=0&ui=en-US&rs=en-US&ad=US&appredirect=false" target="_blank" className="special">Buy it!</a>
                                     </article>
-                                    {/* <article>
-                                        <a href="#" className="image"><div className="image-bg five portfolio"></div></a>
-                                        <h3 className="major">Nisl placerat</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                        <a href="#" className="special">Learn more</a>
-                                    </article>
-                                    <article>
-                                        <a href="#" className="image"><div className="image-bg six portfolio"></div></a>
-                                        <h3 className="major">Ante fermentum</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                        <a href="#" className="special">Learn more</a>
-                                    </article>
-                                    <article>
-                                        <a href="#" className="image"><div className="image-bg seven portfolio"></div></a>
-                                        <h3 className="major">Fusce consequat</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                        <a href="#" className="special">Learn more</a>
-                                    </article> */}
                                 </section>
                                 {/* <ul className="actions">
                                     <li><a href="#" className="button">Browse All</a></li>
@@ -156,7 +127,6 @@ class App extends Component {
                     </section>
 
                     <section id="footer">
-                        <div onClick={this.handleSearchChange}>click here to send message</div>
                         <div className="inner">
                             <h2 className="major">Get in touch</h2>
                             <p>Questions, comments, concerns or feedback? We'd love to hear from you!</p>
@@ -183,9 +153,8 @@ class App extends Component {
                                     4 14th Street #127<br />
                                     Hoboken, NJ 07030
 								</li>
-                                {/* <li className="fa-phone">(000) 000-0000</li> */}
-                                <li className="fa-envelope"><a href="#">dev@burndev.co</a></li>
-                                <li className="fa-github"><a href="#">github.com/burndevllc</a></li>
+                                <li className="fa-envelope"><a href="mailto:dev@burndev.co" target="_top">dev@burndev.co</a></li>
+                                <li className="fa-github"><a href="https://github.com/BurnDev" target="_blank">github.com/burndevllc</a></li>
                             </ul>
                             <ul className="copyright">
                                 <li>&copy; Burn Dev, LLC. All rights reserved.</li>

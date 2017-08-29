@@ -1955,23 +1955,23 @@
 
 /* Form */
 
-	form {
+	.form {
 		margin: 0 0 2em 0;
 	}
 
-		form .field {
+		.form .field {
 			margin: 0 0 2em 0;
 		}
 
-			form .field label {
+			.form .field label {
 				margin-top: -1.5em;
 			}
 
-			form .field:first-child label {
+			.form .field:first-child label {
 				margin-top: 0;
 			}
 
-		form > :last-child {
+		.form > :last-child {
 			margin-bottom: 0;
 		}
 
@@ -3702,7 +3702,7 @@
 				width: 100%;
 			}
 
-				#footer .inner form {
+				#footer .inner .form {
 					width: 100%;
 					margin: 0 0 4em 0;
 				}
@@ -3729,7 +3729,7 @@
 				padding: 2em 2em 0.1em 2em ;
 			}
 
-				#footer .inner form {
+				#footer .inner .form {
 					margin: 0 0 3em 0;
 				}
 
