@@ -108,7 +108,7 @@ class App extends Component {
                                 <section className="features">
                                     <article>
                                         <div className="image">
-                                            <div className="image-bg formula-editor portfolio">
+                                            <div className="image-bg formula-editor app-icon">
                                                 <div className="image-overlay winner"></div>
                                             </div>
                                         </div>
@@ -130,7 +130,7 @@ class App extends Component {
                         <div className="inner">
                             <h2 className="major">Get in touch</h2>
                             <p>Questions, comments, concerns or feedback? We'd love to hear from you!</p>
-                            <div className="form">
+                            <form>
                                 <div className="field">
                                     <label for="name">Name</label>
                                     <input type="text" name="name" id="name" value={this.state.name} onChange={this.handleInputChange} />
@@ -146,7 +146,7 @@ class App extends Component {
                                 <ul className="actions">
                                     <li><button value="Send Message" onClick={this.handleSubmit}>Send Message</button></li>
                                 </ul>
-                            </div>
+                            </form>
                             <ul className="contact">
                                 <li className="fa-home">
                                     BurnDev, LLC<br />

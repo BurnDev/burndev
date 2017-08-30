@@ -29,7 +29,7 @@
 		background: url('../../images/pic04.jpg');
 	}
 	.image-bg.formula-editor {
-		background: url('../../images/app_icon_300.png');
+		background: url('../../images/app_icon_260.png');
 	}
 	.image-bg.five {
 		background: url('../../images/pic05.jpg');
@@ -44,6 +44,11 @@
 	.image-bg.portfolio {
 		width: 450;
 		height: 260;
+	}
+
+	.image-bg.app-icon {
+		display: block;
+		margin: 10% auto 0 auto;
 	}
 
 	.image-overlay {
@@ -61,10 +66,26 @@
 	}
 
 	.long-logo {
-		background: url('../../images/burnDev_long.png') -50px no-repeat;
+		background: url('../../images/burnDev_long.png') no-repeat;
+		background-position: -50px 5px;
 		background-size: 500px;
 		height: 100px;
 	}
+
+	@media screen and (max-width: 736px) {
+		.long-logo {
+			background-position: -40px 20px;
+			background-size: 400px;
+		}
+	}
+
+	@media screen and (max-width: 360px) {
+		.long-logo {
+			background-position: -30px 40px;
+			background-size: 300px;
+		}
+	}
+
 /* horrible hacks end here...for now */
 
 /* Reset */
@@ -1955,23 +1976,23 @@
 
 /* Form */
 
-	.form {
+	form {
 		margin: 0 0 2em 0;
 	}
 
-		.form .field {
+		form .field {
 			margin: 0 0 2em 0;
 		}
 
-			.form .field label {
+			form .field label {
 				margin-top: -1.5em;
 			}
 
-			.form .field:first-child label {
+			form .field:first-child label {
 				margin-top: 0;
 			}
 
-		.form > :last-child {
+		form > :last-child {
 			margin-bottom: 0;
 		}
 
@@ -3638,7 +3659,7 @@
 			width: 100%;
 		}
 
-		#footer .inner .form {
+		#footer .inner form {
 			margin: 0 3em 0 0;
 			width: calc(50% - 1.5em);
 		}
@@ -3702,7 +3723,7 @@
 				width: 100%;
 			}
 
-				#footer .inner .form {
+				#footer .inner form {
 					width: 100%;
 					margin: 0 0 4em 0;
 				}
@@ -3729,7 +3750,7 @@
 				padding: 2em 2em 0.1em 2em ;
 			}
 
-				#footer .inner .form {
+				#footer .inner form {
 					margin: 0 0 3em 0;
 				}
 
