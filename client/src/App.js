@@ -58,9 +58,10 @@ class App extends Component {
                         <div className="inner">
                             <h2>Menu</h2>
                             <ul className="links">
-                                <li><a href="">Home</a></li>
-                                <li><a href="#one">What We Do</a></li>
-                                <li><a href="#two">Need Something Specific</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#one">We Make Work Easier</a></li>
+                                <li><a href="#two">Our Process</a></li>
+                                <li><a href="#three">We'll Customize An App For Your Needs </a></li>
                                 <li><a href="#projects">Our Projects</a></li>
                                 <li><a href="#footer">Contact Us</a></li>
                             </ul>
@@ -79,12 +80,13 @@ class App extends Component {
                     <section id="wrapper">
                         <section id="one" className="wrapper spotlight style1">
                             <div className="inner">
-                                <div className="image">
+                                {/* <div className="image">
                                     <div className="image-bg one"></div>
-                                </div>
+                                </div> */}
                                 <div className="content">
-                                    <h2 className="major">What We Do</h2>
-                                    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+                                    <h2 className="major">We Make Work Easier</h2>
+                                    <p>We develop apps that enhance the productivity of existing software. Our mission is to make your work easier by removing obstacles to getting stuff done. We want you to burn through what you <text style={{ fontWeight: "bold", fontStyle: "italic" }}> have to</text> do so you can get to what you <text style={{ fontWeight: "bold", fontStyle: "italic" }}> want to</text> do. </p>
+                                    <p>We understand how frustrating it can be when products you use only deliver part of what you need to do your job. Our mission is to build apps that get you all the way there, enhancing productivity and efficiency through a clean and easy user experience.</p>
                                     {/* <a href="#footer" className="special">Learn more</a> */}
                                 </div>
                             </div>
@@ -92,10 +94,25 @@ class App extends Component {
 
                         <section id="two" className="wrapper alt spotlight style2">
                             <div className="inner">
-                                <a href="#" className="image"><div className="image-bg two"></div></a>
+                                {/* <a href="#" className="image"><div className="image-bg two"></div></a> */}
                                 <div className="content">
-                                    <h2 className="major">Need Something Specific</h2>
-                                    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+                                    <h2 className="major">Our Process</h2>
+                                    <p>We are dedicated to building modern apps that make you more productive. We focus on the user throughout the development process.</p>
+                                    <ul>
+                                        <li><p><text style={{ fontWeight: "bold", fontStyle: "italic" }}>Concept:</text> Ideas for our apps come from moments of frustration - a task taking just a little too long, settling for a sub-optimal template, banging our heads against a wall trying to understand a complex Excel formula. We know we can be more productive. Instead of settling, we design apps, so we can burn through what we have to do and get to what we want to do.</p></li>
+                                        <li><p><text style={{ fontWeight: "bold", fontStyle: "italic" }}>Development:</text> We approach app development by figuring out how we can make information more accessible, streamline the task, and navigate around obstacles. We specialize in add-ins for Microsoft Office, designing apps to blend seamlessly into the software you’re already familiar with.</p></li>
+                                        <li><p><text style={{ fontWeight: "bold", fontStyle: "italic" }}>Support:</text> We actively maintain all products and provide technical support. Our goal is for you to be as productive as possible, so we work to incorporate your feedback to provide the best user experience possible. Have a specific issue? We want to work with you to develop a custom app for your needs</p></li>
+                                    </ul>
+                                    {/* <a href="#" className="special">Learn more</a> */}
+                                </div>
+                            </div>
+                        </section>
+                        <section id="three" className="wrapper spotlight style3">
+                            <div className="inner">
+                                {/* <a href="#" className="image"><div className="image-bg two"></div></a> */}
+                                <div className="content">
+                                    <h2 className="major">We’ll customize an app for your needs</h2>
+                                    <p>Our approach to design and development rests on solving everyday problems at work. We want to work with you to understand what slows you down and build an app specific to the needs of you and your company. From custom add-ins and apps to modifying an existing project to fit your needs, Burn Dev is here for you. Contact us using the form below.</p>
                                     {/* <a href="#" className="special">Learn more</a> */}
                                 </div>
                             </div>
