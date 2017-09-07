@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import contact from './assets/js/mailer';
+import Form from './form/Form.js';
 // import logo from './logo.svg';
 import './App.css';
 import './assets/css/theme.css';
@@ -14,34 +14,7 @@ import './assets/js/util';
 //   To get started, edit <code>src/App.js</code> and save to reload.
 // </p>
 
-
-
 class App extends Component {
-    // todo: move to constructor? 
-    state = {
-        name: '',
-        email: '',
-        message: ''
-    };
-
-    handleInputChange(event) {
-        const target = event.target;
-        const name = target.name;
-
-        this.setState({
-            [name]: target.value
-        });
-    }
-
-    handleSubmit(event) {
-        // todo: insert validation here, clear user input, display success/error message
-        event.preventDefault();
-        contact(this.state);
-    };
-
-    handleInputChange = this.handleInputChange.bind(this);
-    handleSubmit = this.handleSubmit.bind(this);
-
     render() {
         return (
             <div className="App">
@@ -132,7 +105,7 @@ class App extends Component {
                                         <h3 className="major">Formula Editor - Complex Formulas Simplified</h3>
                                         <p>This is Microsofts 2017 Hack Productivity best Office add-in winner.  The Formula Editor integrates a fully-fledged code editor into Microsoft Excel helping the user easily format and unwind complex formulas.</p>
                                         <a className="special">View the project page - Coming Soon!</a>
-                                        <a href="https://store.office.com/en-us/app.aspx?assetid=WA104381147&sourcecorrid=a4c534a9-d075-478b-8025-f5b14398e01d&searchapppos=0&ui=en-US&rs=en-US&ad=US&appredirect=false" target="_blank" className="special">Buy it!</a>
+                                        <a href="https://store.office.com/en-us/app.aspx?assetid=WA104381147&sourcecorrid=a4c534a9-d075-478b-8025-f5b14398e01d&searchapppos=0&ui=en-US&rs=en-US&ad=US&appredirect=false" target="_blank" className="special">Try it!</a>
                                     </article>
                                 </section>
                                 {/* <ul className="actions">
@@ -147,23 +120,7 @@ class App extends Component {
                         <div className="inner">
                             <h2 className="major">Get in touch</h2>
                             <p>Questions, comments, concerns or feedback? We'd love to hear from you!</p>
-                            <form>
-                                <div className="field">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" value={this.state.name} onChange={this.handleInputChange} />
-                                </div>
-                                <div className="field">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" value={this.state.email} onChange={this.handleInputChange} />
-                                </div>
-                                <div className="field">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" rows="4" value={this.state.message} onChange={this.handleInputChange}></textarea>
-                                </div>
-                                <ul className="actions">
-                                    <li><button value="Send Message" onClick={this.handleSubmit}>Send Message</button></li>
-                                </ul>
-                            </form>
+                            <Form />
                             <ul className="contact">
                                 <li className="fa-home">
                                     BurnDev, LLC<br />

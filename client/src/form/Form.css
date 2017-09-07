@@ -1,0 +1,19 @@
+.formErrors {
+    color: #990C20;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.has-error input[type="text"], 
+.has-error input[type="email"], 
+.has-error textarea {
+    border: 2px solid #990C20;
+}
+
+.has-error input[type="text"]:focus, 
+.has-error input[type="email"]:focus, 
+.has-error textarea:focus {
+    border: 2px solid #990C20;
+}
