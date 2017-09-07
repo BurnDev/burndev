@@ -12,7 +12,7 @@ class Form extends Component {
             email: '',
             message: '',
             formErrors: { email: '', name: '', message: '' },
-            submitSuccess: { success: false, failure: false},
+            submitSuccess: { success: false, failure: false },
             isSubmitting: false,
             emailValid: false,
             nameValid: false,
@@ -68,26 +68,36 @@ class Form extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.setState({isSubmitting: true})
+        this.setState({ isSubmitting: true })
         contact({
             name: this.state.name,
             email: this.state.email,
-            message: this.state.message},
-             ((err, data) => {
-            let submitState;
-            this.setState({isSubmitting: false})
-            if (!err) {
-                submitState = {success: true, failure: false};
-                this.setState({ email: '', name: '', message: '' });
-            } else {
-                submitState = {success: false, failure: true};
-            }
-            this.setState({submitSuccess: submitState});
+            message: this.state.message
         })
-        );
+        .then((res) => {
+            this.handleResponse(null, res)
+        })
+        .catch((err) => {
+            this.handleResponse(err);
+            ;
+        })
     };
 
+    handleResponse(err, data) {
+        let submitState
+        this.setState({ isSubmitting: false });
+        if (err) {
+            submitState = { success: false, failure: true };
+        } else {
+            submitState = { success: true, failure: false };
+            this.setState({ email: '', name: '', message: '' });
+        }
+        this.setState({ submitSuccess: submitState });
+    }
+
     handleSubmit = this.handleSubmit.bind(this);
+    handleResponse = this.handleResponse.bind(this);
+
     render() {
         return (
             <form className="contactForm">
