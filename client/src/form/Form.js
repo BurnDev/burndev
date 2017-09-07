@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FormErrors } from './FormErrors';
+import { SubmitSuccess } from './FormSubmit';
 import contact from '../assets/js/mailer';
 import './Form.css';
 
@@ -11,6 +12,8 @@ class Form extends Component {
             email: '',
             message: '',
             formErrors: { email: '', name: '', message: '' },
+            submitSuccess: { success: false, failure: false},
+            isSubmitting: false,
             emailValid: false,
             nameValid: false,
             messageValid: false,
@@ -42,7 +45,7 @@ class Form extends Component {
                 fieldValidationErrors.name = nameValid ? '' : 'Your name must be at least 2 characters';
                 break;
             case 'message':
-                messageValid= value.length >= 1;
+                messageValid = value.length >= 1;
                 fieldValidationErrors.message = messageValid ? '' : 'A message is required';
             default:
                 break;
@@ -65,30 +68,47 @@ class Form extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        contact(this.state);
+        this.setState({isSubmitting: true})
+        contact({
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message},
+             ((err, data) => {
+            let submitState;
+            this.setState({isSubmitting: false})
+            if (!err) {
+                submitState = {success: true, failure: false};
+                this.setState({ email: '', name: '', message: '' });
+            } else {
+                submitState = {success: false, failure: true};
+            }
+            this.setState({submitSuccess: submitState});
+        })
+        );
     };
 
-    // handleSubmit = this.handleSubmit.bind(this); // todo: is this necessary?
+    handleSubmit = this.handleSubmit.bind(this);
     render() {
         return (
-            <form>
-                <div className="panel panel-default">
+            <form className="contactForm">
+                <div className={this.state.isSubmitting ? "spinner" : ""}>
                     <FormErrors formErrors={this.state.formErrors} />
+                    <SubmitSuccess submitSuccess={this.state.submitSuccess} />
                 </div>
                 <div className={`field ${this.errorClass(this.state.formErrors.name)}`}>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" value={this.state.name}
-            onChange={this.handleUserInput}/>
+                        onChange={this.handleUserInput} />
                 </div>
                 <div className={`field ${this.errorClass(this.state.formErrors.email)}`}>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" value={this.state.email}
-            onChange={this.handleUserInput}/>
+                        onChange={this.handleUserInput} />
                 </div>
                 <div className={`field ${this.errorClass(this.state.formErrors.message)}`}>
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="4" value={this.state.message}
-            onChange={this.handleUserInput}></textarea>
+                        onChange={this.handleUserInput}></textarea>
                 </div>
                 <ul className="actions">
                     <li><button type="submit" value="Send Message" onClick={this.handleSubmit} disabled={!this.state.formValid}>Send Message</button></li>

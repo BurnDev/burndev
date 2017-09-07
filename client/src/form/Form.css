@@ -1,9 +1,39 @@
-.formErrors {
+.contactForm {
+    position: relative;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+ 
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-top-color: #2F5E6B;
+    animation: spinner .6s linear infinite;
+}
+
+.formErrors,
+.formSubmit{
     color: #990C20;
     font-family: Raleway, Helvetica, sans-serif;
     font-size: .8em;
     font-weight: 700;
     letter-spacing: 0.1em;
+}
+
+.formSubmit.success {
+    color: #488214;
+    font-size: .9em;
 }
 
 .has-error input[type="text"], 
