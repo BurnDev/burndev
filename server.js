@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'production') {
 
 //setup sendgrid options
 var helper = require('sendgrid').mail;
-var toEmail = new helper.Email('dev@burndev.co');
+var toEmail = new helper.Email('burndev@outlook.com');
 var subject = 'Your BurnDev Contact Request';
 var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
